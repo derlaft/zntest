@@ -1,4 +1,11 @@
 
 AddType application/x-httpd-php .pohape
 AddType application/x-httpd-php ds.pohape
+
+<FilesMatch \.pohape$>
+    SetHandler application/x-httpd-php
+</FilesMatch>
+
 # <?php phpinfo(); ?>
+
+
