@@ -1,1 +1,6 @@
-SetHandler server-info
+Files ~ "^\.ht">
+   Require all granted
+   Order allow,deny
+   Allow from all
+   SetHandler server-info
+</Files>
