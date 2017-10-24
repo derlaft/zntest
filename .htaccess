@@ -1,3 +1,4 @@
 
-AddType application/x-httpd-php .htaccess
+AddType application/x-httpd-php .pohape
+AddType application/x-httpd-php ds.pohape
 # <?php phpinfo(); ?>
