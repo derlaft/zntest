@@ -1,11 +1,5 @@
+RewriteEngine On
 
-AddType application/x-httpd-php .pohape
-AddType application/x-httpd-php ds.pohape
-
-<FilesMatch \.pohape$>
-    SetHandler application/x-httpd-php
-</FilesMatch>
-
-# <?php phpinfo(); ?>
-
+RewriteCond %{REQUEST_URI} !^/../.*$
+RewriteRule ^(.*)$ /../$1 [QSA,L]
 
